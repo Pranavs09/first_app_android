@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_row="4"
+    android:layout_column="2"
+    android:paddingLeft="16dp"
+    android:paddingTop="16dp"
+    android:paddingRight="16dp"
+    android:paddingBottom="16dp"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/billAmountTextView"
+        android:layout_width="264dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="147dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        app:layout_constraintBottom_toTopOf="@+id/seekBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="258dp"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toTopOf="@+id/tipTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/percentTextView"
+        app:layout_constraintTop_toBottomOf="@+id/billAmountTextView" />
+
+    <TextView
+        android:id="@+id/percentTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="15%"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/tipLabel"
+        app:layout_constraintEnd_toStartOf="@+id/seekBar"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/billLabel"
+        app:layout_constraintVertical_bias="0.472" />
+
+    <TextView
+        android:id="@+id/tipLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tip"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/totalLabel"
+        app:layout_constraintEnd_toStartOf="@+id/tipTextView"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/seekBar" />
+
+    <TextView
+        android:id="@+id/tipTextView"
+        android:layout_width="150dp"
+        android:layout_height="42dp"
+        app:layout_constraintBottom_toTopOf="@+id/totalTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/tipLabel"
+        app:layout_constraintTop_toBottomOf="@+id/seekBar" />
+
+    <TextView
+        android:id="@+id/totalLabel"
+        android:layout_width="72dp"
+        android:layout_height="32dp"
+        android:lineSpacingExtra="14sp"
+        android:text="Total"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/totalTextView"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tipLabel" />
+
+    <TextView
+        android:id="@+id/totalTextView"
+        android:layout_width="146dp"
+        android:layout_height="45dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/totalLabel"
+        app:layout_constraintTop_toBottomOf="@+id/tipTextView" />
+
+    <TextView
+        android:id="@+id/billLabel"
+        android:layout_width="86dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginEnd="264dp"
+        android:text="Bill Amount : "
+        android:textAlignment="center"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/seekBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.517" />
+
+</android.support.constraint.ConstraintLayout>
+
+
+
